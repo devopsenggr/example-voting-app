@@ -1,6 +1,6 @@
 #!/bin/bash
-git config --global user.email awstraining42@gmail.com
-git config --global user.name awstraining42
+git config --global user.email <>
+git config --global user.name <>
 set -x
 # Set the repository URL
 REPO_URL="https://awstraining4200@dev.azure.com/awstraining4200/m/_git/m"
