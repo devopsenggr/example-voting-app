@@ -1,7 +1,9 @@
 #!/bin/bash
+git config --global user.email awstraining42@gmail.com
+git config --global user.name awstraining42
 set -x
 # Set the repository URL
-REPO_URL="https://ot6vxpetmikd5bkn3c3jlkzousv7tecappsbaukgnw7so4pkkf4a@dev.azure.com/awstraining4200/g/_git/g"
+REPO_URL="https://awstraining4200@dev.azure.com/awstraining4200/m/_git/m"
 # Clone the git repository into the /tmp directory
 git clone "$REPO_URL" /tmp/temp_repo
 # Make changes to the Kubernetes manifest file(s)
@@ -12,7 +14,6 @@ git add .
 # Commit the changes
 git commit -m "Update Kubernetes manifest"
 # Push the changes back to the repository
-git remote add origin https://awstraining4200@dev.azure.com/awstraining4200/g/_git/g
-git push -u origin --all
+git push https://awstraining4200@dev.azure.com/awstraining4200/m/_git/m
 # Cleanup: remove the temporary directory
 rm -rf /tmp/temp_repo
